@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .carousel {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    animation: scroll 10s linear infinite;
+  }
+  
+  .carousel-item {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  @keyframes scroll {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: -500px; /* total height of all items */
+    }
+  }
+  
